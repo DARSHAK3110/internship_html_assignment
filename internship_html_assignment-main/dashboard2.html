@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Assignment</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+        <div class="items">
+            <li>
+                <a href="#">
+                    <img src="images/dashboard-active.svg" alt="dashboard_icon" style="width:20px;">Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/graph-default.svg" alt="analysis_icon" style="width:20px;">Analysis
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/inbox-default.svg" alt="inbox_icon" style="width:20px;">Inbox
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/clock-default.svg" alt="history_icon" style="width:20px;">History
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/user-default.svg" alt="users_icon" style="width:20px;">Users
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/maintenance-default.svg" alt="maintainance_icon" style="width:20px;">Maintenance
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/setting-default.svg" alt="setting_icon" style="width:20px;">Setting
+                </a>
+            </li>
+        </div>
+
+    </section>
+    <section id="iface">
+        <div class="nav">
+            <div class="n1">
+                <div class="hamburger">
+                    <i id="menu-btn" ><img  src="images/menu-bar.svg" alt="menu_icon" width="33.33px">
+                    </i>
+                    </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="search">
+                </div>
+    
+            </div>
+            <div class="profile">
+                <i class="far fa-bell"></i>
+                <img src="images/profile.png" alt="Profile.png" width="44px">
+            </div>
+        </div>
+        <div class="dash">
+            <h3 class="dashboard_heading">Dashboard</h3>
+        </div>
+        <div class="product_detail">
+            <div class="detail-box">
+                <img src="images/star.svg" alt="star_icon" width="33.33px">
+                <div class="info">
+                    <h3 id="product_new">23,456</h3>
+                    <span class="pro_title">New Products</span>
+                </div>
+            </div>
+            <div class="detail-box">
+                <img src="images/new-product.svg" alt="new_product_icon" width="33.33px">
+                <div class="info">
+                    <h3 id="product_new">2345</h3>
+                    <span class="pro_title">Added Products</span>
+                </div>
+            </div>
+            <div class="detail-box">
+                <img src="images/total-product.svg" alt="total_product_icon" width="33.33px">
+                <div class="info">
+                    <h3 id="product_new">32,456</h3>
+                    <span class="pro_title">Total Products</span>
+                </div>
+
+            </div>
+            <div class="detail-box">
+                <img src="images/dollar-filled.svg" alt="star_icon" width="33.33px">
+                <div class="info">
+                    <h3 id="product_new">5678</h3>
+                    <span class="pro_title">Today's sale</span>
+                </div>
+            </div>
+            <div class="detail-box">
+                <img src="images/money-bag.svg" alt="star_icon" width="33.33px">
+                <div class="info">
+                    <h3 id="product_new">335342</h3>
+                    <span class="pro_title">Total sale</span>
+                </div>
+            </div>
+        </div>
+        <div class="charts" style="margin-top: 10px;">
+            <div class="chart">
+                <div class="chart_title">
+                    <h3>Sale</h3>
+                    <div class="timeline">
+                        <a href="#" id="week_time">Weekly</a>
+                        <a href="#" id="month_time">Monthly</a>
+                        <a href="#" id="year_time">Yearly</a>
+                    </div>
+                </div>
+                <img src="images/data-graph.png" alt="line-graph" style="width: 100%; margin:5px;"/>
+            </div>
+            <div class="dounghnut-chart">
+                <h3>Sale by Country</h3>
+                <img src="images/pie-chart.svg" alt="Pie-charts" />
+                <div class="countries">
+                    <div class="country">
+                        <span>&#128308;
+                            United States of America
+                        </span>
+                    </div>
+                    <div class="country">
+                        <span>&#128994;
+                            Canada
+                        </span>
+                    </div>
+                </div>
+                <div class="countries">
+                    <div class="country">
+                        <span>&#128992;
+                            Russia
+                        </span>
+                    </div>
+                    <div class="country">
+                        <span>&#128993;
+                            India
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="invoice-container">
+            
+        <div class="invoice_title">
+            <h2>Invoices</h2>
+        </div>
+        <div class="table">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">INVOICE</th>
+            <th scope="col">COMPANY NAME</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">DUE DATE</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">AMOUNT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">123</th>
+            <td>xyz.pvt</td>
+            <td>Mark@xyz.com</td>
+            <td>01/01/2001</td>
+            <td><a href="#"class="fail">Failed</a></td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <th scope="row">123</th>
+            <td>xyz.pvt</td>
+            <td>Mark@xyz.com</td>
+            <td>01/01/2001</td>
+            <td><a href="#" class="fail">Failed</a></td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <th scope="row">123</th>
+            <td>xyz.pvt</td>
+            <td>Mark@xyz.com</td>
+            <td>01/01/2001</td>
+            <td><a href="#"class="done">Done</a></td>
+            <td>10,000</td>
+          </tr>
+
+          <tr>
+            <th scope="row">123</th>
+            <td>xyz.pvt</td>
+            <td>Mark@xyz.com</td>
+            <td>01/01/2001</td>
+            <td><a href="#" class="done">Done</a></td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <th scope="row">123</th>
+            <td>xyz.pvt</td>
+            <td>Mark@xyz.com</td>
+            <td>01/01/2001</td>
+            <td><a href="#" class="pending">Pending</a></td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <th scope="row">123</th>
+            <td>xyz.pvt</td>
+            <td>Mark@xyz.com</td>
+            <td>01/01/2001</td>
+            <td><a href="#" class="pending">Pending</a></td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <th scope="row">123</th>
+            <td>xyz.pvt</td>
+            <td>Mark@xyz.com</td>
+            <td>01/01/2001</td>
+            <td><a href="#" class="fail">Failed</a></td>
+            <td>10,000</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
+        </div>
+
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart1.js"></script>
+    <script src="js/chart2.js"></script>
+    <script>
+        $('#menu-btn').click(function () {
+                $('#menu').toggleClass('active');
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Assignment</title>
+    <link rel="stylesheet" href="css/innerpage_css.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="menu">
+        <div class="logo">
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+        <div class="items">
+            <li>
+                <a href="#">
+                    <img src="images/dashboard-active.svg" alt="dashboard_icon" style="width:20px;">Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/graph-default.svg" alt="analysis_icon" style="width:20px;" id="active">Analysis
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/inbox-default.svg" alt="inbox_icon" style="width:20px;">Inbox
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/clock-default.svg" alt="history_icon" style="width:20px;">History
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/user-default.svg" alt="users_icon" style="width:20px;">Users
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/maintenance-default.svg" alt="maintainance_icon" style="width:20px;">Maintenance
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/setting-default.svg" alt="setting_icon" style="width:20px;">Setting
+                </a>
+            </li>
+        </div>
+
+    </section>
+    <section id="iface">
+        <div class="nav">
+            <div class="n1">
+                <div class="hamburger">
+                    <i id="menu-btn"><img src="images/menu-bar.svg" alt="menu_icon" width="33.33px">
+                    </i>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="search">
+                </div>
+
+            </div>
+            <div class="profile">
+                <i class="far fa-bell"></i>
+                <img src="images/profile.png" alt="Profile.png" width="44px">
+            </div>
+        </div>
+        <section id="form-details">
+            <div class="container-fluid">
+
+                <div class="dash">
+                    <h3 class="dashboard_heading">One-Column</h3>
+                </div>
+                <form>
+                    <div class="form-group one-col" id="name">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" aria-placeholder="Drop-down" id="exampleFormControlSelect1">
+                            <option selected>Drop-down</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Multiple Lines"
+                            rows="3"></textarea>
+                    </div>
+                </form>
+                <div class="dash">
+                    <h3 class="dashboard_heading">Two-Column</h3>
+                </div>
+                <form>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
+                  </form>
+            </div>
+        </section>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart1.js"></script>
+    <script src="js/chart2.js"></script>
+    <script>
+        $('#menu-btn').click(function () {
+            $('#menu').toggleClass('active');
+        })
+    </script>
+</body>
+
+</html>
